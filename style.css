@@ -6,9 +6,9 @@
 }
 
 .logo {
-  position: relative;
+  position: fixed;
   height: 100vh;
-  width: max(350px, 40%);
+  width: min(400px, 50%);
 }
 
 .bg-round {
@@ -40,4 +40,35 @@
   color: white;
   font-size: 4rem;
   font-weight: 700;
+}
+
+.main {
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  right: 0;
+  left: min(400px, 50%);
+  padding: 120px 40px;
+}
+
+.information {
+  width: max(250px, 61%);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.all-inputs {
+  display: flex;
+  gap: 20px 50px;
+  flex-wrap: wrap;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.labels input {
+  height: 35px;
+  width: min(350px, 30vw);
 }
