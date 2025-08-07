@@ -44,17 +44,33 @@
 
 .main {
   position: fixed;
-  top: 10px;
-  bottom: 10px;
+  top: 0;
+  bottom: 0;
   right: 0;
   left: min(400px, 50%);
   padding: 120px 40px;
+  background-color: #eee;
 }
 
 .information {
   width: max(250px, 61%);
   font-size: 1.3rem;
   font-weight: 500;
+  margin-bottom: 50px;
+}
+
+
+.inputs {
+  background-color: #fff;
+  margin: 0 -40px;
+  padding: 20px 40px 40px;
+  box-shadow: 0 3px 10px #aaa;
+}
+
+form legend {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
 .all-inputs {
@@ -68,7 +84,46 @@
   flex-direction: column;
 }
 
+.labels label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #444;
+}
+
 .labels input {
   height: 35px;
   width: min(350px, 30vw);
+  padding-left: 10px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.labels input:focus {
+  box-shadow: 0 1px 3px #444;
+}
+
+.labels #password:invalid, .labels #confirm_pass:invalid {
+  border-color: red;
+  border-style: solid;
+}
+
+button[type="submit"] {
+  background-color: #596D48;
+  color: #eee;
+  border: none;
+  padding: 15px 70px;
+  font-weight: 800;
+  border-radius: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.exist {
+  margin-top: 25px;
+
+  > a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 800;
+  }
 }
